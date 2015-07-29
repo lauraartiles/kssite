@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  employee_id: 1
+  date_requesting_start: 2015-07-20
+  date_requesting_end: 2015-07-20
+  status: MyString
+  reason: MyString
+  title: MyString
+
+two:
+  employee_id: 1
+  date_requesting_start: 2015-07-20
+  date_requesting_end: 2015-07-20
+  status: MyString
+  reason: MyString
+  title: MyString
