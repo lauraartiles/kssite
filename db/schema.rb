@@ -17,11 +17,11 @@ ActiveRecord::Schema.define(version: 20150720233213) do
     t.integer  "employee_id"
     t.date     "date_requesting_start"
     t.date     "date_requesting_end"
-    t.string   "status"
+    t.string   "status",                default: "Pending"
     t.string   "reason"
     t.string   "title"
-    t.datetime "created_at",            null: false
-    t.datetime "updated_at",            null: false
+    t.datetime "created_at",                                null: false
+    t.datetime "updated_at",                                null: false
   end
 
   create_table "users", force: :cascade do |t|

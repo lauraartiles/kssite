@@ -10,6 +10,7 @@ class HomeController < ApplicationController
   end
 
   def ksfam
+    @users=User.all
   end
 
   def settings
