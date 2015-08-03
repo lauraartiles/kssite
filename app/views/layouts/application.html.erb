@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Kssite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag    'application', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 
@@ -14,8 +14,7 @@
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-</head>
-<body>
+	<% if user_signed_in? %> 
 	<nav class="navbar navbar-default" role="navigation">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,21 +31,23 @@
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 	      <ul class="nav navbar-nav navbar-right"> 
-	        <% if user_signed_in? %>    
+	           
 	           <li><%= link_to "Requests", requests_path %></li>
 	           <li><%= link_to "KS Fam", ksfam_path %></li>
 	           <li><%= link_to "Settings", edit_user_registration_path %></li>
 	           <li><%= link_to "Log Out", destroy_user_session_path, :method=>:delete %></li>
-	        <%end%>
+	        
 	      </ul>
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
+	<%end%>
+</head>
 
-<div class="container" > 
-<%= yield %>
- </div>
-
-
+<body>
+	<div class="container" > 
+		<%= yield %>
+ 	</div>
 </body>
+
 </html>
