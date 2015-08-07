@@ -6,9 +6,11 @@ gem 'rails', '4.2.0'
 # Add devise gem for user
 gem 'devise'
 # Add admin side
-gem 'rails_admin'
+gem 'activeadmin', github: 'activeadmin'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
+# Adds bootstrap
+gem 'bootstrap-sass'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
