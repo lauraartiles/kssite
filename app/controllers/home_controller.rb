@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   def signin
+    @user=User.new
   end
 
   def dashboard

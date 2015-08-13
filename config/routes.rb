@@ -13,12 +13,8 @@ Rails.application.routes.draw do
 
   get 'home/settings', as: :settings
 
-  get 'home/signout', as: :signout
-
   resources :requests
-
-   
-  
+ 
   ActiveAdmin::Devise.config
   
   ActiveAdmin.routes(self)
