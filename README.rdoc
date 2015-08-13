@@ -1,5 +1,5 @@
 ==Kendra Scott Employee Platform
 
-A place where employees of the jewelry company, Kendra Scott can submit requests for days off, view and employee directory, and view weekly updates. Managers can post updates, approve/deny requests for days off, and add or delete employees.
+A place where employees of the jewelry company, Kendra Scott, can submit requests for days off, view an employee directory, and view weekly updates. Managers can post updates, approve/deny requests for days off, and add or delete employees.
 
 **Begun while working part-time in retail for Kendra Scott during Fall 2014**
